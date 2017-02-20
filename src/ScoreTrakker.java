@@ -19,7 +19,7 @@ public class ScoreTrakker {
 			Student nextStudent = new Student(first, last, score);
 			studentList.add(nextStudent);
 		}
-		
+		in.close();
 		
 	}
 	
