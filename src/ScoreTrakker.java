@@ -15,6 +15,7 @@ public class ScoreTrakker {
 			int score = in.nextInt();
 			// Still have to add a way to split name string into first and last name
 			
+			
 			Student nextStudent = new Student(name, score);
 			studentList.add(nextStudent);
 		}
