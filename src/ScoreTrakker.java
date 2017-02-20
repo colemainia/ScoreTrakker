@@ -31,15 +31,13 @@ public class ScoreTrakker {
 		}
 	}
 	
-	public void processFiles() {
-		
+	public void processFiles(String str) throws FileNotFoundException {
+		loadDataFromFile(str);
+		printInOrder();
 	}
 	
 	public static void main(String[] args) throws FileNotFoundException{
 		ScoreTrakker scoreTrakker = new ScoreTrakker();
-		scoreTrakker.loadDataFromFile("scores.txt");
-		//System.out.print(scoreTrakker.studentList);
-		
-		scoreTrakker.printInOrder();
+		scoreTrakker.processFiles("scores.txt");
 	}
 }
